@@ -1,0 +1,48 @@
+body {
+  background: url("mbg.jpg");
+  color: yellow;
+}
+.left img{
+    width: auto;
+    height: auto;
+}
+.anm{
+    color: yellow;
+    text-decoration: underline;
+    border-right: solid 3px rgba(0,255,0,.75);
+    white-space: nowrap;
+    overflow: hidden;    
+    font-family: 'Source Code Pro', monospace;  
+    font-size: 28px;
+    
+}
+.anm{
+    animation: animated-text 4s steps(24) 1s 1 normal both,
+               animated-cursor 600ms steps(24) infinite;
+}  
+@keyframes animated-text{
+    from{width: 0;}
+    to{width: 300px;}
+}
+@keyframes animated-cursor{
+    from{border-right-color: rgba(0,255,0,.75);}
+    to{border-right-color: transparent;}
+} 
+
+.list-item {
+  color: rgb(0 255 255);
+  font-family: cursive;
+}
+#image {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+#next{
+    margin: 10px;
+    width: 120px;
+    height: 40px;
+    font-family: cursive;
+    background-color: #5cfb51;
+    color: black;
+}
